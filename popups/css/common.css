@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* font-face */
+/*@font-face{font-weight:800;font-style:normal; font-family:SamsungSSBd;src:url(../font/SamsungSS_Bd.eot);src:url(../font/SamsungSS_Bd.eot?iefix) format('embedded-opentype'),url(../font/SamsungSS_Bd.woff) format('woff'),url(../font/SamsungSS_Bd.ttf) format('truetype'),url(../font/SamsungSS_Bd.svg#SamsungSS_Bd) format('svg')}
+@font-face{font-weight:600;font-style:normal; font-family:SamsungSSMd;src:url(../font/SamsungSS_Md.eot);src:url(../font/SamsungSS_Md.eot?iefix) format('embedded-opentype'),url(../font/SamsungSS_Md.woff) format('woff'),url(../font/SamsungSS_Md.ttf) format('truetype'),url(../font/SamsungSS_Md.svg#SamsungSS_Md) format('svg')}
+@font-face{font-weight:400;font-style:normal; font-family:SamsungSSRg;src:url(../font/SamsungSS_Rg.eot);src:url(../font/SamsungSS_Rg.eot?iefix) format('embedded-opentype'),url(../font/SamsungSS_Rg.woff) format('woff'),url(../font/SamsungSS_Rg.ttf) format('truetype'),url(../font/SamsungSS_Rg.svg#SamsungSS_Rg) format('svg')}
+*/
+
+*{margin:0; border:0; box-sizing:border-box;}
+body {font-size:14px; color:#666;  font-family:SamsungSSMd,sans-serif; font-weight: 400; }
+div, p, span, a {line-height:1.4;}
+
+a:link {color:#000; cursor:pointer; text-decoration:none;}
+a:visited {color:#000; cursor:pointer; text-decoration:none;}
+a:active, a:hover, a:focus {color:#666; cursor: pointer; text-decoration:none;}
+
+input, textarea, select {font-size:1em; color:#544f44;font-family:'Noto Sans KR',dotum,Tahoma,Verdana,AppleGothic,sans-serif; font-weight: 400;}
+input[type=text], input[type=date], input[type=password], textarea {padding:4px 4px; border:1px solid #d5d5d5;}
+input.radio, input.check, input.btn {border:0 !important;}
+input.radio {margin-bottom:1px;}
+label.chk {display:inline-block; margin:2px 15px 0 4px;}
+label.chk2 {display:inline-block; margin:2px 5px 0 4px;}
+
+ul,ol, ol li {list-style:none; padding:0;}
+form {margin:0; padding:0;}
+a img {border:0;}
+noscript {position:absolute; z-index:10; background:#efefef;}
+noscript p {margin:0; paddinh:0;}
+em {font-style:normal;}
+label {cursor:pointer;}
+legend {visibility:hidden; height:0; width:0; font-size:0; line-height:0; overflow:hidden; position:absolute;}
+caption {visibility:hidden; height:0; width:0; font-size:0; line-height:0; overflow:hidden;}
+form fieldset {border:none; padding:0; margin:0;}
+img {vertical-align:middle;}
+h1,h2,h3,h4,h5,h6{line-height: 1em; font-weight:normal;}
+select {background:none; -webkit-appearance: none; -moz-appearance: none; }
+select:before { /* 화살표 대체 */ content: ""; position: absolute; top: 50%; right: 15px; width: 0; height: 0; margin-top: -1px; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid #333; }
+
+select::-ms-expand {display:none;}
+
+/* hidden */
+#skip, ul.skiplist li.skip, .skipnavi, caption, legend, span.skip { position: absolute ; font-size: 0px; line-height: 0px; overflow: hidden; visibility: hidden; text-indent: -1000px; }
+
+/* SKIP navigation */
+.skipNav {position:absolute; top:0; left:0; list-style:none; margin:0; padding:0; width:20em; z-index:99999;}
+.skipNav li {display:inline; margin:0; padding:0;}
+.skipNav li a {position:absolute; display:block; top:-200px; left:0; padding:5px 10px; background-color:#fafafa; color:#333;}
+.skipNav li a:focus {top:0; left:0;}

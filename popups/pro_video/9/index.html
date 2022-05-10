@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pro Video</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" charset="utf-8" />
+    <meta name="googlebot" content="noindex" />
+
+    <!-- html info -->
+    <meta name="title" content="">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- SNS info -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+
+    <!-- Include files -->
+    <link href="../../css/common.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <script src="../../js/resize.js"></script>
+    <script src="../../js/index9.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".speed").click(function() {
+                $(".index9").toggleClass("toggle");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div>
+            <!-- index9 s -->
+            <div class="index9 index">
+                <div class="video ds_pc">
+                    <video id="videobg_l" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" playsinline class="slow_off">
+                        <source src="../../images/pc_provideo_fin.mp4" type="video/mp4">
+                        This browser does not support HTML5 video tag.
+                    </video>
+                    <video id="videobg_l" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" playsinline class="slow_on">
+                        <source src="../../images/pc_provideo_1_4_fin.mp4" type="video/mp4">
+                        This browser does not support HTML5 video tag.
+                    </video>
+                </div>
+                <div class="video ds_mb">
+                    <video id="videobg_l" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" playsinline class="slow_off">
+                        <source src="../../images/mo_provideo_fin.mp4" type="video/mp4">
+                                This browser does not support HTML5 video tag.
+                    </video>
+                    <video id="videobg_l" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" playsinline class="slow_on">
+                        <source src="../../images/mo_provideo_1_4_fin.mp4" type="video/mp4">
+                                This browser does not support HTML5 video tag.
+                    </video>
+                </div>
+                <div class="content">
+                    <img src="../../images/provideo_08_ui.png" alt="" class="ds_pc">
+                    <img src="../../images/provideo_08_ui2.png" alt="" class="ds_mb">
+					<div class="btn blinking"><a href="#n"></a></div>
+					<img src="../../images/speed4.png" class="speed ds_pc">
+					<img src="../../images/speed4m.png" class="speed ds_mb">
+                </div>
+            </div>
+            <!-- index9 e -->
+        </div>
+
+    </div>
+</body>
+</html>

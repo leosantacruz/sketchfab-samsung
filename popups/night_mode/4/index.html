@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Night Mode</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" charset="utf-8" />
+    <meta name="googlebot" content="noindex" />
+    <!-- html info -->
+    <meta name="title" content="">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- SNS info -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <!-- Include files -->
+    <link href="../../css/common.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <script src="../../js/resize.js"></script>
+    <script language='javascript'>
+    function Timer() {
+        setTimeout("locateKap()", 10000);
+    }
+
+    function locateKap() {
+        location.replace("../5/index.html");
+    }
+    </script>
+    <script language='javascript'>
+    cnt = 3; 
+    function countdown() {
+        if (cnt == 0) {
+         
+            locateKap();
+        } else {
+            
+            document.all.choonDiv.innerHTML = cnt + "";
+            cnt--;
+            if(cnt == 0) {
+                setTimeout("countdown()", 700);
+            } else {
+                setTimeout("countdown()", 1000);
+            }
+        }
+    }
+    </script>
+</head>
+
+<body onLoad="Timer();">
+    <div id="wrap">
+        <div>
+            <!-- night4 s -->
+            <div class="night4 index">
+                <div class="video">
+                    <video id="videobg_l" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" playsinline class="ds_pc">
+                        <source src="../../images/pc_nightmode_fin.mp4" type="video/mp4">
+                        <source src="../../images/pc_nightmode_fin.webm" type="video/webm">
+                                This browser does not support HTML5 video tag.
+                    </video>
+                    <video id="videobg_l" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" playsinline class="ds_mb">
+                        <source src="../../images/mo_nightmode_fin.mp4" type="video/mp4">
+                        <source src="../../images/mo_nightmode_fin.webm" type="video/webm">
+                                This browser does not support HTML5 video tag.
+                    </video>
+                </div>
+                <div class="content">
+                    <img src="../../images/nightmode_04_ui.png" alt="" class="ds_pc">
+                    <img src="../../images/gui_night04m.png" height="100%" alt="" class="ds_mb">
+                </div>
+                <div id="choonDiv" class="mcount"></div>
+                <script>countdown();</script>
+                <p class="gu_moon"><img src="../../images/night_mode_master.gif" loop="1"></p>
+            </div>
+            <!-- night4 e -->
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+    .index {position: relative; width: 100%; height: 100vh !important; min-height: 100%; max-height: 100%; background: #000; overflow: hidden;}
+    .content {position: absolute; top: 0px; left: 0px; width: 100%; /*height: 100% !important; */min-height: 100%; /*max-height: 100%;*/}
+    .video {width: 560px; height: 1200px;}
+    
+    #videobg_l {position: absolute; top: 0; left: 0px; width: 100%; height: auto; overflow: hidden;}
+    #videobg_2 {position: absolute; top: 0; left: 0px; width: 100%; height: auto; overflow: hidden;}
+    #videobg_3 {position: absolute; top: 0; left: 0px; width: 100%; height: auto; overflow: hidden;}
+    #videobg_4 {position: absolute; top: 0; left: 0%; width: 100%; height: auto; overflow: hidden;}
+    .ds_pc {display: none;}
+    .ds_mb {display: block;}
+    
+    /* pro_video1 */
+    .index1 .content {position: absolute; background: url('../images/gui_pro_bg2.png') 0 0 no-repeat; background-size: contain;}
+    .index1 .content img {width: auto; margin: 0 auto;}
+    .index1 .btn a {right: 2.5%; top: unset; bottom: 18.3%; width: 50px; height: 50px;}
+    /* .index1 .btn a {right: 11.8%; top: 73.6%; width: 50px; height: 50px;} */
+    
+    /*  */
+    /* page2 */
+    .index2 .content {position: absolute; background: url('../images/gui_pro_bg2.png') 0 0 no-repeat; background-size: contain;}
+    .index2 .content img {width: auto; margin: 0 auto;}
+    .index2 .btn a {left: 38.4%; top: 45.9%; width: 50px; height: 50px;}
+    
+    /* page3 */
+    .index3 .content {position: absolute; background: url('../images/provideo_bar_bg2.png') 0 0 no-repeat; background-size: contain;}
+    .index3 .content img {width: auto; margin: 0 auto;}
+    .index3 .btn a {left: 2.6%; bottom: unset; top: 4.5%; width: 40px; height: 40px; border-radius: 50%;}
+    .index3 img.audio {position: absolute; left: 12%; bottom: 7%; width: auto;}
+    
+    /* page4 */
+    .index4 .content {position: absolute; background: url('../images/gui_pro_setting2.png') 0 0 no-repeat; background-size:100% 100%;}
+    .index4 .content img {width: auto; margin: 0 auto;}
+    .index4 .btn a {top: 7%; left: 13%; width: 26%; height: 12%;}
+    
+    /* page5 */
+    .index5 .content {position: absolute; background: url('../images/gui_pro_setting2.png') 0 0 no-repeat; background-size:100% 100%;}
+    .index5 .content img {width: auto; margin: 0 auto;}
+    .index5 .btn a {top: 11%; left: 31%; width: 26%; height: 12%;}
+    
+    /* page6 */
+    .index6 .content {position: absolute; background: url('../images/gui_pro_setting2.png') 0 0 no-repeat; background-size:100% 100%;}
+    .index6 .content img {width: 100%}
+    .index6 .btn a {top: 15%; left: 6%; width: 26%; height: 12%;}
+    .index6 img.pop {position: absolute; left: 14%; top: 10%; width: 39%;}
+    
+    /* page7 */
+    .index7 .content {position: absolute; background: url('../images/provideo_bar_bg2.png') 0 0 no-repeat; background-size: contain;}
+    .index7 .content img {width: auto; margin: 0 auto;}
+    .index7 .content {position: absolute;}
+    .index7 .btn a {right: 35.5%; top: unset; bottom: 6%; height: 80px; width: 80px;}
+    .index7 img.audio {position: absolute; left: 4%; bottom: unset; top: 11%; width: 40%;}
+    
+    /* page8 */
+    .index8 .content {position: absolute; background: url('../images/provideo_bar_bg2.png') 0 0 no-repeat; background-size: contain;}
+    .index8 .content img {width: auto; margin: 0 auto;}
+    .index8 .content .rec_time {bottom: unset; top: 40%; right: 44%; font-size: 15px; transform: rotateZ(90deg);}
+    .index8 .content .cur_time {width: 120px; margin: 0 auto;}
+    .index8 .content .cur_time > img {margin-bottom: 4px;}
+    .index8 .cur_time img {width: 15px; height: 15px;}
+    .index8 img.audio {left: 3%; bottom: unset; top: 14%; width: 40%;}
+    .index8 .mcount {position: absolute; right: 11%; top: 61%; width: 100px; font-size: 3em; color: #fff; text-align: center;}
+    
+    /* index8_2 */
+    .index8_2 .content {position: absolute; background: url('../images/08_2.png')no-repeat center center; background-size:cover;}
+    .index8_2 .btn a {left: 41%;bottom: 15.5%;width: 15.6%;height: 11%;}
+    
+    /* page9 */
+    .index9 #videobg {top: 0;}
+    .index9 .content {position: absolute;}
+    .index9 .content img { width: 100%;}
+    /* .index9 .content {background: url('../images/provideo_bar_bg2.png') center 0 no-repeat; background-size: contain;} */
+    .index9 .content img.speed {width: 30px; max-width: 30px; bottom: 13.1%; right: unset; left: 6%;}
+    .index9 .btn {position: unset; background: rgba(0,0,0,0);}
+    .index9 .btn a {bottom: 11.6%; right: unset; left: 2.5%; width: 50px; height: 50px;}
+    
+    .index9 .video .slow_off {display: none;}
+    .index9 .video .slow_on {display: block;}
+    .index9.toggle .video .slow_off {display: block;}
+    .index9.toggle .video .slow_on {display: none;}
+    
+    /* night1 */
+    .night1 .content {position: absolute; background: url('../images/gui_night_bg2.png')no-repeat center center; background-size:100% 100%;}
+    .night1 .content img {width: auto; margin: 0 auto;}
+    .night1 .btn a {right: 0.5%; top: unset; bottom: 17.2%; width: 60px; height: 60px;}
+    
+    /* night2 */
+    .night2 .content {position: absolute; background: url('../images/gui_night_bg2.png')no-repeat center center; background-size:100% 100%;}
+    .night2 .content img {width: auto; margin: 0 auto;}
+    .night2 .btn a {right: 16.4%; top: 58.9%; width: 60px; height: 60px;}
+    
+    /* night3 */
+    .night3 .content {position: absolute; background: url('../images/gui_night_bg2.png')no-repeat center center; background-size:100% 100%;}
+    .night3 .content img {width: auto; margin: 0 auto;}
+    .night3 .btn a {right: 35.2%; top: unset; bottom: 6%; width: 80px; height: 80px;}
+    
+    /* night4 */
+    .night4 .content {position: absolute;  background: url('../images/gui_night_bg2.png')no-repeat center center; background-size:100% 100%;}
+    .night4 .content img {width: auto; margin: 0 auto;}
+    .night4 .btn a {right: 8.1%; top: 41%; width: 9%; height: 18%; border-radius: 50%;}
+    .night4 .mcount {right: 53%; top: unset; bottom: 12.3%; width: 94px; font-size: 1.5em; transform: rotate(90deg);}
+    .night4 .gu_moon {right: 40%; top: unset; width: 20%; height: 10%; bottom: 12%; }
+    .night4 .gu_moon img {transform: rotate(90deg);}
+    
+    /* night5 */
+    .night5 {background: url('../images/gui_nightmode2_on_fin.png')no-repeat center center; background-size: 100% 100%;}
+    .night5 .content {position: absolute; background: url('../images/gui_night_bg2.png')no-repeat center center;background-size:100% 100%;}
+    .night5 .content img {width: auto; margin: 0 auto;}
+    .night5 .btn a {right: -10%; top: unset; bottom: 35%; width: 100px; height: 26px; border-radius: 0; transform: rotate(90deg); }
+    .night5 .btn a::after,
+    .night5 .btn a::before {right: 20%; top: -68%; width: 60px; height: 60px;}
+    .night5 .btn.toggle a {background-image: url('../images/gui_mode_off.png');}
+    
+    .bg_night_off {background: url('../images/gui_nightmode2_off_fin.png')no-repeat center center; background-size:cover;}
+    
+    /* live01 */
+    .live01 .content {position: absolute; background: url('../images/gui_live_bg2.png')no-repeat center center; background-size:100% 100%;}
+    .live01 .content img {width: auto; margin: 0 auto;}
+    .live01 .btn a {top: unset; bottom: 17.4%; right: 0.7%; width: 60px; height: 60px;}
+    
+    /* live02 */
+    .live02 .content {position: absolute; background: url('../images/gui_live_bg2.png')no-repeat center center; background-size:100% 100%;}
+    .live02 .content img {width: auto; margin: 0 auto;}
+    .live02 .btn a {top: 31.1%; left: 36.5%; width: 60px; height: 60px;}
+    
+    /* live03 */
+    .live03 .content {position: absolute; background: url('../images/livefocus_bar_bg2.png')no-repeat center center; background-size:100% 100%;}
+    .live03 .content img {width: auto; margin: 0 auto;}
+    .live03 .btn a {top: unset; bottom: 26.6%; right: 1.8%; width: 50px; height: 50px;}
+    .live03 .content .find_face { position: absolute; left: 88%; top: 36%; height: 13%; width: 9.1%;}
+    .live03 .content .ready { position: absolute; left: 88%; top: 37.25%; height: 10.5%; width: 9.1%; display: none;}
+    /* .live03 .txt_ready {top: 14%; left: 38%; width: 26%; height: 5%; font-size: 1.1em; line-height: 1.7em; transform: unset;} */
+    
+    /* live03a */
+    .live03a .content {position: absolute; background: url('../images/gui_live_bar2.png')no-repeat center center; background-size:100% 100%;}
+    .live03a .content img {width: auto; margin: 0 auto;}
+    .live03a .btn a {top: unset; bottom: 26.3%; right: 6%; width: 50px; height: 50px;}
+    /* .live03a .txt_ready {top: 13%; left: 38%; width: 26%; height: 5%; font-size: 1.1em; line-height: 1.7em; transform: unset;} */
+    
+    .effect_name {position: absolute; color: white; left: 14.5%; bottom: 21%; transform: rotateZ(0deg); width: auto; height: 4%; font-size: 0.7em;}
+    
+    /* live04 */
+    .live04 .content {position: absolute; background: url('../images/gui_live_bar2.png')no-repeat center center; background-size:100% 100%;}
+    .live04 .content img {width: auto; margin: 0 auto;}
+    .live04 .btn a {top: unset; bottom: 25.1%; right: 8.4%; width: 60px; height: 60px;}
+    /* .live04 .txt_ready {top: 14%; left: 38%; width: 26%; height: 5%; font-size: 1.1em; line-height: 1.7em; transform: unset;} */
+    
+    .btn_glitch {right: 14%; top: unset; bottom: 26%; width: 25px; height: 25px;}
+    .btn_bigcircle {right: 35%; top: unset; bottom: 26%; width: 25px; height: 25px;}
+    .btn_color {right: 56%; top: unset; bottom: 26%; width: 25px; height: 25px;}
+    .btn_blur {right: 77%; top: unset; bottom: 26%; width: 25px; height: 25px;}
+    
+    /* live05 */
+    .live05 .content {position: absolute; background: url('../images/gui_live_bar2.png')no-repeat center center; background-size:100% 100%;}
+    .live05 .content img {width: auto; margin: 0 auto;}
+    .live05 .content .rec_time {top: 8%; left: 33%; font-size: 17px; transform: unset; font-size: 1em;}
+    .live05 .btn a {top: unset; bottom: 26.5%; right: 29%; width: 50px; height: 50px;}
+    
+    /* live06 */
+    .live06 .content {position: absolute; background: url('../images/gui_live_bar2.png')no-repeat center center; background-size:100% 100%;}
+    .live06 .content img {width: auto; margin: 0 auto;}
+    .live06 .content .rec_time {top: 8%; left: 33%; font-size: 17px; transform: unset; font-size: 1em;}
+    .live06 .btn a {top: 64%; right: 51.2%; width: 50px; height: 50px;}
+    
+    /* live07 */
+    .live07 .content {position: absolute; background: url('../images/gui_live_bar2.png')no-repeat center center; background-size:100% 100%;}
+    .live07 .content img {width: auto; margin: 0 auto;}
+    .live07 .content .rec_time {top: 8%; left: 33%; font-size: 17px; transform: unset; font-size: 1em;}
+    .live07 .btn a {top: 64%; right: 74%; width: 50px; height: 50px;}
+    
+    /* live08 */
+    .live08 .content {position: absolute; background: url('../images/gui_live_bar2.png')no-repeat center center; background-size:100% 100%;}
+    .live08 .content img {width: auto; margin: 0 auto;}
+    .live08 .content .rec_time {top: 8%; left: 33%; font-size: 17px; transform: unset; font-size:1em;}
+    .live08 .btn a {top: 66.4%; right: 71.5%; width: 60px; height: 60px;}
+    
+    /* zoom1 */
+    .zoom1 .content {position: absolute; background: url('../images/gui_zoom_bg2.png')no-repeat center center; background-size:100% 100%;}
+    .zoom1 .content img {width: auto; margin: 0 auto;}
+    .zoom1 .btn a {right: 29.5%; top: unset; bottom: 25.2%; width: 50px; height: 50px;}
+    
+    /* zoom2 */
+    .zoom2 .content {position: absolute; background: url('../images/gui_zoom_bg2.png')no-repeat center center; background-size:100% 100%;}
+    .zoom2 .content img {width: auto; margin: 0 auto;}
+    .zoom2 .btn a {right: 27.5%; top: 74.6%; width: 50px; height: 50px;}
+    
+    /* zoom3 */
+    .zoom3 .content {position: absolute; background: url('../images/gui_zoom_bg2.png')no-repeat center center; background-size:100% 100%;}
+    .zoom3 .content img {width: auto; margin: 0 auto;}
+    .zoom3 .btn a {right: 37%; top: unset; bottom: 6%; width: 70px; height: 70px;}
+    
+    /* zoom4 */
+    .zoom4 {background: url('../images/pic_zoom01m.jpg')no-repeat center center; background-size:cover;}
+    .zoom4 .content {position: absolute; background: url('../images/gui_zoom_bg2.png')no-repeat center center; background-size:100% 100%;}
+    .zoom4 .content img {width: auto; margin: 0 auto;}
+    .zoom4 .btn a {left: unset; right: 79.3%; top: 39%; width: 60px; height: 60px;}
+    
+    /* zoom5 */
+    .zoom5 {background: url('../images/pic_zoom02m.jpg')no-repeat center center; background-size:cover;}
+    .zoom5 .content {position: absolute; background: url('../images/gui_zoom_bg2.png')no-repeat center center; background-size:100% 100%;}
+    .zoom5 .content img {width: auto; margin: 0 auto;}
+    .zoom5 .btn a {left: unset; right: 78.3%; top: 48.2%; width: 60px; height: 60px;}
+    
+    /* zoom6 */
+    .zoom6 {background: url('../images/pic_zoom03m.jpg')no-repeat center center; background-size:cover;}
+    .zoom6 .content {position: absolute; background: url('../images/gui_zoom_bg2.png')no-repeat center center; background-size:100% 100%;}
+    .zoom6 .content img {width: auto; margin: 0 auto;}
+    .zoom6 .btn a {left: unset; right: 79.1%; top: 29.3%; width: 60px; height: 60px;}
+    .txt_zoom {right: 45%; top: 64%; font-size: 1.5em;}
+    
+    /* super01 */
+    .super01 .content {position: absolute; background: url('../images/gui_super_bg2.png')no-repeat center center; background-size:100% 100%;}
+    .super01 .content img {width: auto; margin: 0 auto;}
+    .super01 .btn a {right: 17.9%; top: 72.6%; height: 60px; width: 60px;}
+    
+    /* super02 */
+    .super02 .content {position: absolute; background: url('../images/gui_super_bar2.png')no-repeat center center; background-size:100% 100%;}
+    .super02 .content img {width: auto; margin: 0 auto;}
+    .super02 .btn a {left: 30.5%; top: 2.7%; width: 60px; height: 60px;}
+    
+    /* super03 */
+    .super03 .content {position: absolute; background: url('../images/gui_super_bar2.png')no-repeat center center; background-size:100% 100%;}
+    .super03 .content img {width: auto; margin: 0 auto;}
+    .super03 .btn a {right: 37%; top: 82%; width: 70px; height: 70px;}
+    .super03 .img_steady {left: 79%; top: 42%; width: 100px; height: 20px; background-size: contain; transform: rotateZ(90deg);}
+    
+    /* super04 */
+    .super04 .content {position: absolute; background: url('../images/gui_super_bg2.png')no-repeat center center; background-size:100% 100%;}
+    .super04 .content img {width: auto; margin: 0 auto;}
+    .super04 .content .rec_time {top: 5%; left: 33%; font-size: 18px; transform: unset;}
+    
+    /* super05 */
+    .super05 .content {position: absolute; background: url('../images/gui_super_bg2.png')no-repeat center center; background-size:100% 100%;}
+    .super05 .content img {width: auto; margin: 0 auto;}
+    .super05 .btn a {left: 80%; top: 59%; width: 60px; height: 60px;}
+    
+    .super05 .video .mov_on {display: block;}
+    .super05 .video .mov_off {display: none;}
+    .super05.toggle .video .mov_on {display: none;}
+    .super05.toggle .video .mov_off {display: block;}
+    .super05 .img_steady {left: 75%; top: 60%; width: 35%; height: 10%; background-size: contain; transform: rotate(90deg);}
+    .super05.toggle .img_steady {background-size: contain;}
+    .super05 .content img {content:url("../images/gui_super03m.png")}
+    .super05.toggle .content img {content:url("../images/gui_super05m.png")}
+    
+    /*.super05 .btn a {display: none;}*/
+    /*.super05 .content.toggle .btn a {display: block; right: 7%; top: 40%; width: 10%; height: 20%; border-radius: 50%;}*/
+    /*.super05 .btn_on {position: absolute; left: 5%; top: 52%; width: 6%; height: 12%; border-radius: 50%; display: block; background: #7fd7f7; opacity: 0.5; text-indent: -9999px;}*/
+    /*.super05 .content.toggle .btn_on {display: none;}*/
+    
+    /* super06 */
+    .super06 {height: auto;}
+    .super06 .content {position: relative;top: 0px;left: 0px;}
+    .super06 .content img {width: 100%;}
+    .super06 .btn a {right: 21%; bottom: 7%; width: 8%; height: 16%; border-radius: 50%}

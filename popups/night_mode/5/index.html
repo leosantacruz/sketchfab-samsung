@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Night Mode</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" charset="utf-8" />
+    <meta name="googlebot" content="noindex" />
+    <!-- html info -->
+    <meta name="title" content="">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- SNS info -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <!-- Include files -->
+    <link href="../../css/common.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <script src="../../js/resize.js"></script>
+
+<script>
+$(document).ready(function(){
+  $(".btn").click(function(){
+    $(".night5").toggleClass("bg_night_off");
+    $(".btn").toggleClass("toggle");
+  });
+});
+</script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div>
+            <!-- night5 s -->
+            <div class="night5 index">
+                <div class="content">
+                    <img src="../../images/nightmode_05_ui.png" alt="" class="ds_pc">
+                    <img src="../../images/gui_night05m.png" height="100%" alt="" class="ds_mb">
+                    <div class="btn blinking"><a href="#n">More</a></div>
+                </div>
+            </div>
+            <!-- night5 e -->
+        </div>
+    </div>
+</body>
+
+</html>

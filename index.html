@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <link rel="stylesheet" href="css/style.css" />
+      <title>Galaxy Note20 Ultra - Interactive How-to's</title>
+      <meta name="title" content="Galaxy Note20 Ultra - Interactive How-to's">
+
+      <link rel="canonical" href="https://www.samsung.com/global/galaxy/galaxy-note20">
+      <meta name="keywords" content="Galaxy Note 20 Canvas">
+      <meta name="description" content="Galaxy Note20 Ultra - Interactive How-to's">
+      <meta name="date" content="2020-09">
+      <meta name="twitter:card" content="Summary">
+      <meta name="twitter:site" content="@SamsungMobile">
+      <meta name="twitter:creator" content="@SamsungMobile">
+      <meta name="twitter:url" content="https://www.samsung.com/global/galaxy/galaxy-note20">
+      <meta name="twitter:title" content="Galaxy Note20 Ultra - Interactive How-to's">
+      <meta name="twitter:description" content="Galaxy Note20 Ultra - Interactive How-to's">
+      <meta name="twitter:image" content="https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png">
+      <meta property="og:url" content="https://www.samsung.com/global/galaxy/galaxy-note20">
+      <meta property="og:image" content="https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png">
+      <meta property="og:type" content="website">
+      <meta property="og:site_name" content="Samsung">
+      <meta property="og:title" content="Galaxy Note20 Ultra - Interactive How-to's">
+      <meta property="og:description" content="Galaxy Note20 Ultra - Interactive How-to's">
+      <meta property="name" content="Samsung">
+      <meta property="image" content="https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png">
+      <meta property="url" content="https://www.samsung.com/global/galaxy/galaxy-note20">
+      <meta property="description" content="Galaxy Note20 Ultra - Interactive How-to's">
+      <meta property="keywords" content="Galaxy Note 20 Canvas">
+   
+   </head>
+   <body>
+      <div id="menu">
+         <div class="menuContainer">
+            <h5>Camera</h5>
+            <div class="item" onclick="getCameraPosition()">
+               Get camera position
+            </div>
+            <div class="item" onclick="setCameraAnnotation()">
+               Set annotation
+            </div>
+            <div class="item" onclick="getAnnotationlist()">Get annotations</div>
+            <div class="item" onclick="normalAngle()">Normal angle</div>
+            <div class="item" onclick="screenshot()">Screenshot</div>
+            <hr />
+            <h5>Lights</h5>
+            <div class="item" onclick="getLights()">Get lights (Log)</div>
+            <div class="item" onclick="setLights(false)">Night</div>
+            <div class="item" onclick="setLights(true)">Light</div>
+            <div class="item" onclick="smoothNight()">Smooth night</div>
+            <div class="item" onclick="smoothLight()">Smooth light</div>
+            <hr />
+            <h5>Items</h5>
+            <div class="item" onclick="listNodes()">List item (Log)</div>
+            <div class="item" onclick="goToAnnotation(false)">
+               Go and hide picture
+            </div>
+            <div class="item" onclick="showObject(true)">Show picture</div>
+            <div class="item" onclick="showObject(false)">Hide picture</div>
+            <hr />
+            <h5>Annotations</h5>
+            <div class="item" onclick="getAnnotationlist()">Get list (Log)</div>
+            <hr>
+            <h5>Restricttion</h5>
+            <input type="text" id="left">
+            <input type="text" id="right">
+            <button onclick="setRestriction()">Restrict</button>
+         </div>
+      </div>
+      <!-- POP-UP -->
+      <div class="overlay" id="popupContainer" onclick="closePopup()">
+         <div class="resp-container">
+            <svg class="horizontal" version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               viewBox="0 0 1200 560" enable-background="new 0 0 1200 560" xml:space="preserve">
+               <rect width="1200" height="560"/>
+            </svg>
+            <svg class="vertical" version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               viewBox="0 0 560 1200" enable-background="new 0 0 560 1200" xml:space="preserve">
+               <rect x="0" y="0" width="560" height="1200"/>
+            </svg>
+            <div id="disclaimer">Images simulated and sequences shortened for illustrative purposes. Actual UI may be different. UI may vary depending on country.</div>
+         </div>
+      </div>
+
+      <div class="overlay" id="hintPopup" onclick="closeHintPopup()">
+         <img src="img/popup_guide.png" alt="">
+      </div>
+
+      <div id="loading">
+         Loading scene
+         <div id="progressBar">
+            <div class="progressLine"></div>
+         </div>
+      </div>
+      <div id="navMenu">
+         <a class="arrow_left" onClick="prevCamera()">
+            <svg
+               version="1.1"
+               xmlns="http://www.w3.org/2000/svg"
+               xmlns:xlink="http://www.w3.org/1999/xlink"
+               x="0px"
+               y="0px"
+               viewBox="203.3 141.7 443.7 850.4"
+               enable-background="new 203.3 141.7 443.7 850.4"
+               xml:space="preserve"
+               >
+               <g>
+                  <g>
+                     <path
+                        d="M641.6,986.7c7.2-7.2,7.2-18.9,0-26.1L248,566.9l393.6-393.7c7.2-7.2,7.2-18.9,0-26.1c-7.2-7.2-18.9-7.2-26.1,0
+                        L208.7,553.9c-3.6,3.6-5.4,8.4-5.4,13.1c0,4.7,1.8,9.5,5.4,13.1l406.7,406.7C622.7,993.9,634.4,993.9,641.6,986.7z"
+                        />
+                  </g>
+               </g>
+            </svg>
+         </a>
+         <div  class="title"></div>
+         <!-- <div class="description"></div> -->
+         <a class="arrow_right" onClick="nextCamera()">
+            <svg
+               version="1.1"
+               xmlns="http://www.w3.org/2000/svg"
+               xmlns:xlink="http://www.w3.org/1999/xlink"
+               x="0px"
+               y="0px"
+               viewBox="203.3 141.7 443.7 850.4"
+               enable-background="new 203.3 141.7 443.7 850.4"
+               xml:space="preserve"
+               >
+               <g>
+                  <g>
+                     <path
+                        d="M208.8,147.1c-7.2,7.2-7.2,18.9,0,26.1l393.7,393.6L208.8,960.6c-7.2,7.2-7.2,18.9,0,26.1c7.2,7.2,18.9,7.2,26.1,0
+                        L641.6,580c3.6-3.6,5.4-8.4,5.4-13.1c0-4.7-1.8-9.5-5.4-13.1L234.9,147.1C227.7,139.9,216,139.9,208.8,147.1z"
+                        />
+                  </g>
+               </g>
+            </svg>
+         </a>
+      </div>
+      <iframe
+         src=""
+         id="api-frame"
+         allow="autoplay; fullscreen; vr"
+         allowvr
+         allowfullscreen
+         mozallowfullscreen="true"
+         webkitallowfullscreen="true"
+         class="hidden"
+         ></iframe>
+
+      
+         <script
+         type="text/javascript"
+         src="js/zepto.min.js"
+         ></script>
+   
+         <script>
+            
+   
+            var isIE = false;
+         var ua = window.navigator.userAgent;
+         var old_ie = ua.indexOf('MSIE ');
+         var new_ie = ua.indexOf('Trident/');
+         
+         if ((old_ie > -1) || (new_ie > -1)) {
+         isIE = true;
+         }
+         
+         if ( isIE ) {
+         $("body").html("<div class='bg-no-supported'><div class='overlay'></div><div class='message'>This browser is no longer supported. <br>Please switch to a supported browser.</div></div>")
+         }
+         
+         
+         </script>
+
+
+     
+
+      <script
+         type="text/javascript"
+         src="https://static.sketchfab.com/api/sketchfab-viewer-1.8.2.js"
+         ></script>
+      <script>
+         var uid = "bed9948fe3464d2d952720137261649a";
+      </script>
+
+
+
+      <script src="js/app.js"></script>
+   </body>
+</html>
